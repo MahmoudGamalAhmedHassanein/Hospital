@@ -15,11 +15,14 @@ if(sp>20){
     cout<<"There Are No Specialization More Than 20 We Hope So : )\n";
     return ;
 }
-int c=0;
+int res = 0;
 for(int j=1;j<=5;++j){
-    if(Data[sp][j]=="Seat")c++;
+    if(Data[sp][j]=="Seat")
+    {
+        res++;
+    }
 }
-if(c==0){
+if(res==0){
     cout<<"Sorry There Are No Seat For More Patient Maybe Soon : ) \n";
     return ;
 }
@@ -64,15 +67,18 @@ if(sp>20){
     cout<<"There Are No Specialization More Than 20 We Hope So : )\n";
     return ;
 }
-int c=0;
+int res=0;
 for(int j=1;j<=5;++j){
-    if(Data[sp][j]!="Seat")c++;
+    if(Data[sp][j]!="Seat")
+    {
+        res++;
+    }
 }
-if(!c){
+if(!res){
     cout<<"There Are No Patients In This Specialization \n";
     return ;
 }
-cout<<"There Are "<<c<<" Patients In This Specialization : \n";
+cout<<"There Are "<<res<<" Patients In This Specialization : \n";
 
 for(int j=1;j<=5;++j){
     if(Data[sp][j]!="Seat"){
@@ -94,11 +100,14 @@ if(sp>20){
     cout<<"There Are No Specialization More Than 20 We Hope So : )\n";
     return ;
 }
-int c=0;
+int res=0;
 for(int j=1;j<=5;++j){
-    if(Data[sp][j]!="Seat")c++;
+    if(Data[sp][j]!="Seat")
+    {
+        res++;
+    }
 }
-if(!c){
+if(!res){
     cout<<"There Are No More Patients In This Specialization You Can Have Rest Dr. \n";
     return ;
 }
@@ -167,6 +176,6 @@ cout<<"\t\t\t**************************************\n";
 int main()
 {
     Makeit();
-Hospital_System();
+    Hospital_System();
 return 0;
 }
